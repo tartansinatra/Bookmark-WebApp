@@ -11,6 +11,10 @@
 
  <a href="/bookmarks/<%= bookmark['id']%>/edit">Edit</a>
 
+ <form action="/bookmarks/<%= bookmark['id'] %>/delete" method="post">
+ <input type="submit" value="Delete Bookmark">
+ </form>
+
 
 <% end %>
 

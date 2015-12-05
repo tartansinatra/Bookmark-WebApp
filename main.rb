@@ -57,7 +57,11 @@ post '/bookmarks/:id' do
   redirect to("/bookmarks/#{params[:id]}")
 end
 
-
+post '/bookmarks/:id/delete' do
+  sql = "DELETE FROM bookmarks WHERE id = #{params[:id]}"
+  run_sql(sql)
+  redirect to('/bookmarks')
+end
 
 
 
