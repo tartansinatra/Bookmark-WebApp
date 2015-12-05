@@ -1,0 +1,23 @@
+
+<h5>Name:</h5>
+<p><%= @bookmark['name'] %></p>
+<h5>url:</h5>
+<p><%= @bookmark['url'] %></p>
+<h5>Genre:</h5>
+<p><%= @bookmark['genre'] %></p>
+
+
+<a href="/bookmarks/index">Home</a>
+
+
+<form action="/bookmarks/<%= @bookmark['id']%>" method='post'>
+  <label for='name'>name: </label>
+  <input type='text' name='name' value="<%= @bookmark['name'] %>">
+  
+  <label for='url'>url: </label>
+  <input type='text' name='url' value="<%= @bookmark['url'] %>">
+  
+  <label for='genre'>genre: </label>
+  <input type='text' name='genre' value="<%= @bookmark['genre'] %>">
+  <button>Edit Task</button>
+</form>

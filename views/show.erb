@@ -1,0 +1,18 @@
+<h1>Bookmarks</h1>
+
+<% @result.each do |bookmark| %>
+  <h5>name:</h5><%= bookmark['name'] %>
+
+  <h5>url:</h5>
+  <p><%= bookmark['url'] %></p>
+
+  <h5>genre:</h5>
+ <p><%= bookmark['genre'] %></p>
+
+ <a href="/bookmarks/<%= bookmark['id']%>/edit">Edit</a>
+
+
+<% end %>
+
+
+
