@@ -1,0 +1,24 @@
+
+
+#wrapper {
+    /*opacity: 0.4;*/
+    /*filter: alpha(opacity=40); */
+    background-color: #000;
+    width: 540px;
+    height: auto;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+ul {
+  font-family: Lobster;
+  font-size: 25px; 
+}
+

@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Bookmarks</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookmarks from Stu</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Rubik:400,400italic,500|Rancho' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <nav>
+  
+  <ul>
+    <a href="/">Home</a>
+    <a href="/bookmarks">View All</a>
+    <a href="/bookmarks/new">Add New</a>
+  </ul>
 
+  </nav>
 
- 
+  <body>
 
-<ul>
-  <a href="/">Home</a>
-  <a href="/bookmarks">View All</a>
-  <a href="/bookmarks/new">Add New</a>
-</ul>
+  <div id="wrapper">
+      <img id="frankenstein" src="/images/frankenstein.jpg" />
+  </div>
 
 <%= yield %>
 
-</body>
+  </body>
 </html>

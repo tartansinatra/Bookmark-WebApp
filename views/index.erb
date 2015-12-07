@@ -1,6 +1,12 @@
+<header></header>
+<body>
+
+
 <% @bookmarks.each do |bookmark| %>
   <h5>Name: <%= bookmark['name'] %></h5>
   <h5>url:  <%= bookmark['url'] %></h5>
   <h5>Genre:  <%= bookmark['genre'] %></h5>
   <a href="/bookmarks/<%= bookmark['id'] %>">Show It!</a>
 <% end %>
+
+</body>
